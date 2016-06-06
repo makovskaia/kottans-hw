@@ -2,25 +2,26 @@
 <html lang=en>
 <meta charset=utf-8>
 <link rel=stylesheet href=task02.css>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <title>
 </title>
 <header class=nav-buttons>
-	<a class=go-back role=button href=/>Go back</a>
+	<a class="go-back uppercase" role=button href=/>Go back</a>
 	<img class=logo href=/ alt=logo>
-	<a class=sign-in role=button href=/>Sign in</a>
+	<a class="sign-in uppercase" role=button href=/>Sign in</a>
 </header>
 <main class=order>
 	<form>
 		<div class=order-and-help-center-wrapper>
 			<section class=your-order>
 				<div class=order-details-wrapper>
-					<h1>Your order</h1>
+					<h1 class=uppercase>Your order</h1>
 					<table class=order-details>
 						<tr>
-							<th>items
-							<th>details
-							<th>price
-							<th>delivery
+							<th class=uppercase>items
+							<th class=uppercase>details
+							<th class=uppercase>price
+							<th class=uppercase>delivery
 						</tr>
 						<tr>
 							<td>2 documents
@@ -31,16 +32,16 @@
 					</table>
 				</div>
 				<fieldset class=order-buttons>
-					<button class=place-order>
+					<button class="place-order uppercase">
 						Place order
 					</button>
-					<button class=print-a-quote>
+					<button class="print-a-quote uppercase">
 						Print a quote
 					</button>
 				</fieldset>
 			</section>
 			<section class=help-center>
-					<h1>Help center</h1>
+					<h1 class=uppercase>Help center</h1>
 					<article>If you need assistance while placing your order, contact one of our beloved Project Managers by phone or email</article>
 					<address>
 						<a href=tel:+971(0)555555>+971(0)555 555</a>
@@ -50,14 +51,22 @@
 		</div>
 
 		<section class=translate-options>
-			<h1>Select what you want to translate</h1>
-			<input type=radio>
-			<input type=radio>
-			<input type=radio>
+			<h1 class=uppercase>Select what you want to translate</h1>
+			<fieldset class=what-to-translate>
+				<label for=website>Website</label>
+				<input type=radio id=website>
+				<label for=documents>Documents</label>
+				<input type=radio id=documents>
+				<label for=social-account>Social account</label>
+				<input type=radio id=social-account>
+			</fieldset>
 		</section>
-		<section>
-			<h1>Upload your documents</h1>
-			<small>(Doc, Docx, Text, PDF, Markdown)</small>
+
+		<section class=upload>
+			<div class=h1-small-wrapper>
+				<h1 class=counter-header>Upload your documents</h1>
+				<small>(Doc, Docx, Text, PDF, Markdown)</small>
+			</div>
 			<button>Upload a new file</button>
 			<table>
 				<tr>
@@ -84,46 +93,67 @@
 			</table>
 		</section>
 		<section>
-			<h1>Choose your languages pairings
+			<h1 class=counter-header>Choose your languages pairings</h1>
+			<label for=from>From</label>
+			<select id=from name=from>
+				<option>English</option>
+				<option>Spanish</option>
+				<option>Russian</option>
+			</select>
+			<label for=to>to</label>
+			<select id=to name=to>
+				<option>Spanish</option>
+				<option>English</option>
+				<option>Russian</option>
+			</select>
+			<select id=to name=to>
+				<option>Russian</option>
+				<option>Spanish</option>
+				<option>English</option>
+			</select>
+			<button>Add</button>
 		</section>
 		<section>
-			<h1>Select your desired tone</h1>
-			<input type=radio>
-			<input type=radio>
-			<input type=radio>
+			<h1 class=counter-header>Select your desired tone</h1>
+			<label for=friendly>Friendly/casual</label>
+			<input type=radio id=friendly>
+			<label for=corporate>Corporate/pro</label>
+			<input type=radio id=corporate>
+			<label for=media>Media/Formal</label>
+			<input type=radio id=media>
 		</section>
 		<section>
-			<h1>Tell us how urgent this job is</h1>
-			<input type=radio>
-			<label>I got time</label>
-			<input type=radio>
-			<label>Average</label>
-			<input type=radio>
-			<label>Yesterday</label>
+			<h1 class=counter-header>Tell us how urgent this job is</h1>
+			<input type=radio id=i-got-time>
+			<label for=i-got-time>I got time</label>
+			<input type=radio id=average>
+			<label for=average>Average</label>
+			<input type=radio id=yesterday>
+			<label for=yesterday>Yesterday</label>
 			<section>
-				<h1>Timeline info</h1>
+				<h1 class=uppercase>Timeline info</h1>
 				<p>With an <span>average</span>timeline set up our expert translator can take a reasonable amount of time perfecting your translation</p>
 			</section>
 		</section>
 		<section>
-			<h1>Sign up and choose a payment method</h1>
+			<h1 class=counter-header>Sign up and choose a payment method</h1>
 			<p>Already have an account whith us?<p>
 			<a href=/>Sign in</a>
 			<fieldset>
-				<label>Full name</label>
-				<input type=text placeholder="Mathiew Mayer">
-				<label>Email address</label>
-				<input type=email placeholder=mthiew.mm@me.com>
-				<label>Choose a password</label>
-				<input type=password>
+				<label for=full-name>Full name</label>
+				<input type=text placeholder="Mathiew Mayer" id=full-name>
+				<label for=email-address>Email address</label>
+				<input type=email placeholder=mthiew.mm@me.com id=email-address>
+				<label id=choose-a-password>Choose a password</label>
+				<input type=password id=choose-a-password>
 			</fieldset>
 			<fieldset>
-				<label>Card number</label>
-				<input>
-				<label>Expiry date</label>
-				<input>
-				<label>Code</label>
-				<input>
+				<label for=card-number>Card number</label>
+				<input id=card-number>
+				<label for=expiry-date>Expiry date</label>
+				<input id=expiry-date>
+				<label for=code>Code</label>
+				<input id=code>
 			</fieldset>
 		</section>
 	</form>
