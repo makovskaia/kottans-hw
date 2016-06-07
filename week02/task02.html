@@ -1,190 +1,190 @@
-<!doctype html>
-<html lang=en>
-<meta charset=utf-8>
-<link rel=stylesheet href=task02.css>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-<title>Task 2
-</title>
-<header class=nav-buttons>
-	<a class="go-back uppercase" role=button href=/>Go back</a>
-	<img class=logo src=/ alt=logo>
-	<a class="sign-in uppercase" role=button href=/>Sign in</a>
-</header>
-<main class=order>
-	<form>
-		<div class=order-and-help-center-wrapper>
-			<section class=your-order>
-				<div class=order-details-wrapper>
-					<h1 class=uppercase>Your order</h1>
-					<table class=order-details>
-						<tr class=uppercase>
-							<th>items
-							<th>details
-							<th>price
-							<th>delivery
-						</tr>
-						<tr>
-							<td>2 documents
-							<td>2 languages
-							<td>$ 696.06
-							<td>48 hours*
-						</tr>
-					</table>
-				</div>
-				<fieldset class="order-buttons uppercase">
-					<button class=place-order>
-						Place order
-					</button>
-					<button class=print-a-quote>
-						Print a quote
-					</button>
+	<!doctype html>
+	<html lang=en>
+	<meta charset=utf-8>
+	<link rel=stylesheet href=task02.css>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+	<title>Task 2
+	</title>
+	<header class="nav-buttons uppercase">
+		<a class=go-back role=button href=/>Go back</a>
+		<img class=logo src=/ alt=logo>
+		<a class=sign-in role=button href=/>Sign in</a>
+	</header>
+	<main class=order>
+		<form>
+			<div class=order-and-help-center-wrapper>
+				<section class=your-order>
+					<div class=order-details-wrapper>
+						<h1 class=uppercase>Your order</h1>
+						<table class=order-details>
+							<tr class=uppercase>
+								<th>items
+								<th>details
+								<th>price
+								<th>delivery
+							</tr>
+							<tr>
+								<td>2 documents
+								<td>2 languages
+								<td>$ 696.06
+								<td>48 hours*
+							</tr>
+						</table>
+					</div>
+					<fieldset class="order-buttons uppercase">
+						<button class=place-order>
+							Place order
+						</button>
+						<button class=print-a-quote>
+							Print a quote
+						</button>
+					</fieldset>
+				</section>
+				<section class=help-center>
+						<h1 class=uppercase>Help center</h1>
+						<article>If you need assistance while placing your order, contact one of our beloved Project Managers by phone or email</article>
+						<address>
+							<a href=tel:+971(0)555555>+971(0)555 555</a>
+							<a href=mailto:help@qtest.com>help@qtest.com</a>
+						</address> 
+				</section>
+			</div>
+
+			<section class=translate-options>
+				<h1 class=uppercase>Select what you want to translate</h1>
+				<fieldset class=what-to-translate>
+					<label for=website><img src=# alt=website>Website</label>
+					<input type=radio id=website name=translate-option>
+					<label for=documents><img src=# alt=documents>Documents</label>
+					<input type=radio id=documents name=translate-option>
+					<label for=social-account><img src=# alt=social-account>Social account</label>
+					<input type=radio id=social-account name=translate-option>
 				</fieldset>
 			</section>
-			<section class=help-center>
-					<h1 class=uppercase>Help center</h1>
-					<article>If you need assistance while placing your order, contact one of our beloved Project Managers by phone or email</article>
-					<address>
-						<a href=tel:+971(0)555555>+971(0)555 555</a>
-						<a href=mailto:help@qtest.com>help@qtest.com</a>
-					</address> 
+
+			<section class=upload>
+					<h1 class=counter-header>Upload your documents</h1>
+					<small>(Doc, Docx, Text, PDF, Markdown)</small>
+				<button>Upload a new file</button>
+				<table>
+					<tr>
+						<th>File name
+						<th>File size
+						<th>Number of words
+						<th>Remove	
+					</tr>
+					<tr>
+						<td>business_operations.docx
+						<td>78kb
+						<td>842
+						<td>
+					</tr>
+					<tr>
+						<td>business_financial.docx
+						<td>26kb
+						<td>2.326
+						<td>
+					</tr>
+				</table>
 			</section>
-		</div>
-
-		<section class=translate-options>
-			<h1 class=uppercase>Select what you want to translate</h1>
-			<fieldset class=what-to-translate>
-				<label for=website><img src=# alt=website>Website</label>
-				<input type=radio id=website name=translate-option>
-				<label for=documents><img src=# alt=documents>Documents</label>
-				<input type=radio id=documents name=translate-option>
-				<label for=social-account><img src=# alt=social-account>Social account</label>
-				<input type=radio id=social-account name=translate-option>
-			</fieldset>
-		</section>
-
-		<section class=upload>
-				<h1 class=counter-header>Upload your documents</h1>
-				<small>(Doc, Docx, Text, PDF, Markdown)</small>
-			<button>Upload a new file</button>
-			<table>
-				<tr>
-					<th>File name
-					<th>File size
-					<th>Number of words
-					<th>Remove	
-				</tr>
-				<tr>
-					<td>business_operations.docx
-					<td>78kb
-					<td>842
-					<td>
-				</tr>
-				<tr>
-					<td>business_financial.docx
-					<td>26kb
-					<td>2.326
-					<td>
-				</tr>
-			</table>
-		</section>
-		<section>
-			<h1 class=counter-header>Choose your languages pairings</h1>
-			<label for=from>From</label>
-			<select id=from name=from>
-				<option>English</option>
-				<option>Spanish</option>
-				<option>Russian</option>
-			</select>
-			<label for=to1>to</label>
-			<select id=to1 name=to1>
-				<option>Spanish</option>
-				<option>English</option>
-				<option>Russian</option>
-			</select>
-			<select id=to2 name=to2>
-				<option>Russian</option>
-				<option>Spanish</option>
-				<option>English</option>
-			</select>
-			<button>Add</button>
-		</section>
-		<section>
-			<h1 class=counter-header>Select your desired tone</h1>
-			<label for=friendly>Friendly/casual</label>
-			<input type=radio id=friendly name=tone-option>
-			<label for=corporate >Corporate/pro</label>
-			<input type=radio id=corporate name=tone-option>
-			<label for=media>Media/Formal</label>
-			<input type=radio id=media name=tone-option>
-		</section>
-		<section>
-			<h1 class=counter-header>Tell us how urgent this job is</h1>
-			<input type="range" min="-1" max="1" value="0" step="1" name="power" list="grad">
-			 <datalist id="grad">
-				 <option value="-1" label="I got time">
-				 <option value="0" label="Average">
-				 <option value="1" label="Yesterday">
-			 </datalist>
 			<section>
-				<h1 class=uppercase>Timeline info</h1>
-				<p>With an <span>average</span>timeline set up our expert translator can take a reasonable amount of time perfecting your translation</p>
+				<h1 class=counter-header>Choose your languages pairings</h1>
+				<label for=from>From</label>
+				<select id=from name=from>
+					<option>English</option>
+					<option>Spanish</option>
+					<option>Russian</option>
+				</select>
+				<label for=to1>to</label>
+				<select id=to1 name=to1>
+					<option>Spanish</option>
+					<option>English</option>
+					<option>Russian</option>
+				</select>
+				<select id=to2 name=to2>
+					<option>Russian</option>
+					<option>Spanish</option>
+					<option>English</option>
+				</select>
+				<button>Add</button>
 			</section>
-		</section>
-		<section>
-			<h1 class=counter-header>Sign up and choose a payment method</h1>
-			<p>Already have an account whith us?<p>
-			<a href=/>Sign in</a>
-			<fieldset>
-				<label for=full-name>Full name</label>
-				<input type=text placeholder="Mathiew Mayer" id=full-name>
-				<label for=email-address>Email address</label>
-				<input type=email placeholder=mthiew.mm@me.com id=email-address>
-				<label for=choose-a-password>Choose a password</label>
-				<input type=password id=choose-a-password>
-			</fieldset>
-			<fieldset>
-				<label for=visa><img src=# alt="visa or mastercard"></label>
-				<input type=radio name=payment-option id=visa>
-				<label for=paypal><img src=# alt=paypal></label>
-				<input type=radio name=payment-option id=paypal>
-				<label for=amazon><img src=# alt=amazon></label>
-				<input type=radio name=payment-option id=amazon>
-			</fieldset>
-			<fieldset>
-				<label for=card-number>Card number</label>
-				<input id=card-number>
-				<label for=expiry-date>Expiry date</label>
-				<input id=expiry-date>
-				<label for=code>Code</label>
-				<input id=code>
-			</fieldset>
-		</section>
-		<section class=place-order>
-			<input type=checkbox id=terms-conditions>
-			<label for=terms-conditions><small>I agree to the <a href=#>Terms &amp; Conditions</a></small></label>
-			<button>Place order</button>
-			<button>Print a quote</button>
-		</section>
-	</form>
-</main>
-<footer>
-	<dl>
-		<dt>What we do
-		<dd>We provide a full range of language services includig content development, document, website and social media accounts translations
-		<dt>Our main office
-		<dd>
-			<address>
-				Duba, UAE <br>
-				P.O. Box: 502735 <br>
-				Phone: +971(0) 44278128
-			</address>
-		<dt>Connect with us
-		<dd>
-			<address>
-				<a href=/>Facebook</a>
-				<a href=/>Twitter</a>
-				<a href=/>Linkedin</a>	
-			</address>			
-	</dl>
-</footer>
-</html>
+			<section>
+				<h1 class=counter-header>Select your desired tone</h1>
+				<label for=friendly>Friendly/casual</label>
+				<input type=radio id=friendly name=tone-option>
+				<label for=corporate >Corporate/pro</label>
+				<input type=radio id=corporate name=tone-option>
+				<label for=media>Media/Formal</label>
+				<input type=radio id=media name=tone-option>
+			</section>
+			<section>
+				<h1 class=counter-header>Tell us how urgent this job is</h1>
+				<input type="range" min="-1" max="1" value="0" step="1" name="power" list="grad">
+				 <datalist id="grad">
+					 <option value="-1" label="I got time">
+					 <option value="0" label="Average">
+					 <option value="1" label="Yesterday">
+				 </datalist>
+				<section>
+					<h1 class=uppercase>Timeline info</h1>
+					<p>With an <span>average</span>timeline set up our expert translator can take a reasonable amount of time perfecting your translation</p>
+				</section>
+			</section>
+			<section>
+				<h1 class=counter-header>Sign up and choose a payment method</h1>
+				<p>Already have an account whith us?<p>
+				<a href=/>Sign in</a>
+				<fieldset>
+					<label for=full-name>Full name</label>
+					<input type=text placeholder="Mathiew Mayer" id=full-name>
+					<label for=email-address>Email address</label>
+					<input type=email placeholder=mthiew.mm@me.com id=email-address>
+					<label for=choose-a-password>Choose a password</label>
+					<input type=password id=choose-a-password>
+				</fieldset>
+				<fieldset>
+					<label for=visa><img src=# alt="visa or mastercard"></label>
+					<input type=radio name=payment-option id=visa>
+					<label for=paypal><img src=# alt=paypal></label>
+					<input type=radio name=payment-option id=paypal>
+					<label for=amazon><img src=# alt=amazon></label>
+					<input type=radio name=payment-option id=amazon>
+				</fieldset>
+				<fieldset>
+					<label for=card-number>Card number</label>
+					<input type=number id=card-number>
+					<label for=expiry-date>Expiry date</label>
+					<input type=date id=expiry-date>
+					<label for=code>Code</label>
+					<input type=number id=code>
+				</fieldset>
+			</section>
+			<section class=place-order>
+				<input type=checkbox id=terms-conditions>
+				<label for=terms-conditions><small>I agree to the <a href=#>Terms &amp; Conditions</a></small></label>
+				<button type=submit>Place order</button>
+				<button>Print a quote</button>
+			</section>
+		</form>
+	</main>
+	<footer>
+		<dl>
+			<dt>What we do
+			<dd>We provide a full range of language services includig content development, document, website and social media accounts translations
+			<dt>Our main office
+			<dd>
+				<address>
+					Duba, UAE <br>
+					P.O. Box: 502735 <br>
+					Phone: +971(0) 44278128
+				</address>
+			<dt>Connect with us
+			<dd>
+				<address>
+					<a href=/>Facebook</a>
+					<a href=/>Twitter</a>
+					<a href=/>Linkedin</a>	
+				</address>			
+		</dl>
+	</footer>
+	</html>
