@@ -1,0 +1,359 @@
+/*resets*/
+
+body, h1
+{
+	margin: 0;
+}
+
+a, fieldset, button
+{
+	all:unset;
+}
+
+fieldset
+{
+	display: block;
+}
+
+/*resets*/
+
+html
+{
+background: #ECEEF4;
+}
+
+body
+{
+	max-width: 940px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #939393;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.uppercase
+{
+	text-transform: uppercase;
+}
+
+main
+{
+	counter-reset: heading;
+/*	padding-bottom: 50px;
+	padding-top: 30px;*/
+}
+
+button{
+	padding: 10px 20px 10px 20px;
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+}
+
+img{
+	margin: 0 15px 0 15px;
+}
+
+.nav-buttons
+{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 200px;
+}
+
+.nav-buttons a
+{
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	padding: 14px 30px 14px 30px;
+}
+
+.order
+{
+	background: #FFFFFF;
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+}
+
+.article-help{
+	margin: 7px 0 7px;
+}
+
+.your-order
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	border-bottom: 0.2px solid #939393;
+	display: flex;
+	min-width: 600px;
+	justify-content: space-around;
+}
+
+.your-order h1
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.order-details
+{
+	display: inline-table;
+/*	font-size: 14px;*/
+	text-align: left;
+}
+
+.order-details td
+{
+	padding-right: 15px;
+}
+
+.order-details-wrapper{
+	padding-top: 20px;
+}
+
+.order-buttons
+{
+/*	display: flex;
+	align-content: space-between;*/
+	padding-top: 20px;
+}
+
+.order-buttons button{
+
+}
+
+
+.order-and-help-center-wrapper
+{
+	display: flex;
+	height: 140px;
+}
+.help-center
+{
+	border-left:0.2px solid #939393;
+	border-bottom: 0.2px solid #939393;
+	max-width:340px;
+	padding: 20px 30px 20px 30px;
+}
+
+.translate-options
+{
+	height: 300px;
+	padding-top: 80px;
+	text-align: center;
+}
+
+.translate-options label{
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	display:inline-block;
+	width: 120px;
+	height: 150px;
+	margin: 0 20px 0 20px;
+}
+
+.translate-options label:hover{
+	cursor: pointer;
+}
+
+.translate-options input{
+	display: none;
+}
+
+.translate-options fieldset{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.translate-options h1 
+{
+	text-decoration: underline;
+}
+
+.upload
+{
+	height: 300px;
+	padding: 0 40px 0 40px;
+}
+
+.upload-table{
+	margin: 30px 0 30px;
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.upload-table td{
+	padding: 10px 40px 0 40px;
+}
+
+.h1-small-wrapper
+{
+	display: flex;
+	margin-top: 30px;
+	align-items: center;
+}
+
+.
+.upload button{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.choose-languages{
+	height: 200px;
+	padding: 0 40px 0 40px;
+	display: block;
+}
+
+.choose-languages select{
+	background-color: #ffffff; 
+	padding: 10px 20px 10px 20px;
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	margin: 15px;
+	color: #939393;
+}
+
+.choose-languages button{
+	margin: 15px;
+}
+
+.desired-tone-and-urgency-sections-wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+.desired-tone{
+	height: 300px;
+	padding: 0 40px 0 40px;
+}
+
+.desired-tone label{
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	display:block;
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	/*padding: 10px 20px 10px 20px;*/
+}
+
+.desired-tone label:hover{
+	cursor: pointer;
+}
+
+.desired-tone input{
+	display: none;
+}
+
+.urgency{
+	height: 300px;
+	padding: 0 40px 0 40px;
+}
+
+
+/*customize range input*/
+
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #f2cd85;
+  cursor: pointer;
+  margin-top: -7px; 
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #ECEEF4;
+  border-radius: 3px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #ECEEF4;
+  border-radius: 3px;
+}
+
+.timeline-info{
+	padding: 10px 20px 10px 20px;
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+
+.sign-up{
+	height: 300px;
+	padding: 0 40px 0 40px;
+	display: block;
+}
+
+.counter-header
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.counter-header:before
+{
+	counter-increment: heading;
+	content: counter(heading);
+	margin-right: 20px;
+	/*border:0.2px solid #939393;
+	border-radius: 100%;*/
+}
+
+.small-after:after{
+	content:'  (Doc, Docx, Text, PDF, Markdown)';
+	font-size: 12px;
+	font-weight: lighter;
+	margin-left: 12px;
+}
+
+.place-order{
+	display: flex;
+	justify-content: flex-end;
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+footer ul{
+	display: inline;
+}
+

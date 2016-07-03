@@ -6,9 +6,9 @@
 	<title>Task 2
 	</title>
 	<header class="nav-buttons uppercase">
-		<a class=go-back role=button href=/>Go back</a>
-		<img class=logo src=/ alt=logo>
-		<a class=sign-in role=button href=/>Sign in</a>
+		<a class=go-back role=button href=/><img src='http://image.flaticon.com/icons/svg/126/126492.svg' style='width: 20px' alt='go back'>Go back</a>
+		<img class=logo src='http://image.flaticon.com/icons/svg/126/126502.svg' style='width: 80px' alt=logo>
+		<a class=sign-in role=button href=/><img src='http://image.flaticon.com/icons/svg/126/126486.svg' style='width: 20px' alt='sign in'>Sign in</a>
 	</header>
 	<main class=order>
 		<form>
@@ -42,7 +42,7 @@
 				</section>
 				<section class=help-center>
 						<h1 class=uppercase>Help center</h1>
-						<article>If you need assistance while placing your order, contact one of our beloved Project Managers by phone or email</article>
+						<article class=article-help>If you need assistance while placing your order, contact one of our beloved Project Managers by phone or email</article>
 						<address>
 							<a href=tel:+971(0)555555>+971(0)555 555</a>
 							<a href=mailto:help@qtest.com>help@qtest.com</a>
@@ -53,20 +53,19 @@
 			<section class=translate-options>
 				<h1 class=uppercase>Select what you want to translate</h1>
 				<fieldset class=what-to-translate>
-					<label for=website><img src=# alt=website>Website</label>
+					<label for=website><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=website style='width: 100px; margin: 7px 0 7px'>Website</label>
 					<input type=radio id=website name=translate-option>
-					<label for=documents><img src=# alt=documents>Documents</label>
+					<label for=documents><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=documents style='width: 100px; margin: 7px 0 7px'>Documents</label>
 					<input type=radio id=documents name=translate-option>
-					<label for=social-account><img src=# alt=social-account>Social account</label>
+					<label for=social-account><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=social-account style='width: 100px; margin: 7px 0 7px'>Social account</label>
 					<input type=radio id=social-account name=translate-option>
 				</fieldset>
 			</section>
 
 			<section class=upload>
-					<h1 class=counter-header>Upload your documents</h1>
-					<small>(Doc, Docx, Text, PDF, Markdown)</small>
-				<button>Upload a new file</button>
-				<table>
+					<h1 class='counter-header small-after'>Upload your documents</h1>
+				<button><img src='http://image.flaticon.com/icons/svg/126/126477.svg' style='width: 20px' alt='upload'>Upload a new file</button>
+				<table class=upload-table>
 					<tr>
 						<th>File name
 						<th>File size
@@ -74,66 +73,73 @@
 						<th>Remove	
 					</tr>
 					<tr>
-						<td>business_operations.docx
+						<td><img src='http://image.flaticon.com/icons/svg/85/85966.svg' style='width: 20px' alt='file name'>business_operations.docx
 						<td>78kb
 						<td>842
-						<td>
+						<td><a><img src='http://image.flaticon.com/icons/svg/126/126468.svg' style='width: 20px' alt='remove'></a>
 					</tr>
 					<tr>
-						<td>business_financial.docx
+						<td><img src='http://image.flaticon.com/icons/svg/85/85966.svg' style='width: 20px' alt='file name'>business_financial.docx
 						<td>26kb
 						<td>2.326
-						<td>
+						<td><a><img src='http://image.flaticon.com/icons/svg/126/126468.svg' style='width: 20px' alt='remove'></a>
 					</tr>
 				</table>
 			</section>
-			<section>
+			<section class=choose-languages>
 				<h1 class=counter-header>Choose your languages pairings</h1>
-				<label for=from>From</label>
-				<select id=from name=from>
-					<option>English</option>
-					<option>Spanish</option>
-					<option>Russian</option>
-				</select>
-				<label for=to1>to</label>
-				<select id=to1 name=to1>
-					<option>Spanish</option>
-					<option>English</option>
-					<option>Russian</option>
-				</select>
-				<select id=to2 name=to2>
-					<option>Russian</option>
-					<option>Spanish</option>
-					<option>English</option>
-				</select>
-				<button>Add</button>
+				<fieldset class=translate-from>
+					<label for=from>From</label>
+					<select id=from name=from>
+						<option>English</option>
+						<option>Spanish</option>
+						<option>Russian</option>
+					</select>
+				</fieldset>
+				<fieldset class=translate-to>
+					<label for=to1>to</label>
+					<select id=to1 name=to1>
+						<option>Spanish</option>
+						<option>English</option>
+						<option>Russian</option>
+					</select>
+					<select id=to2 name=to2>
+						<option>Russian</option>
+						<option>Spanish</option>
+						<option>English</option>
+					</select>
+					<button> +  Add</button>
+				</fieldset>
 			</section>
-			<section>
-				<h1 class=counter-header>Select your desired tone</h1>
-				<label for=friendly>Friendly/casual</label>
-				<input type=radio id=friendly name=tone-option>
-				<label for=corporate >Corporate/pro</label>
-				<input type=radio id=corporate name=tone-option>
-				<label for=media>Media/Formal</label>
-				<input type=radio id=media name=tone-option>
-			</section>
-			<section>
-				<h1 class=counter-header>Tell us how urgent this job is</h1>
-				<input type="range" min="-1" max="1" value="0" step="1" name="power" list="grad">
-				 <datalist id="grad">
-					 <option value="-1" label="I got time">
-					 <option value="0" label="Average">
-					 <option value="1" label="Yesterday">
-				 </datalist>
-				<section>
-					<h1 class=uppercase>Timeline info</h1>
-					<p>With an <span>average</span>timeline set up our expert translator can take a reasonable amount of time perfecting your translation</p>
+			<div class=desired-tone-and-urgency-sections-wrapper>
+				<section class=desired-tone>
+					<h1 class=counter-header>Select your desired tone</h1>
+					<fieldset class=what-to-translate>
+						<label for=friendly><img src='http://image.flaticon.com/icons/svg/149/149447.svg' alt=Friendly/casual style='width: 20px'>Friendly/casual</label>
+						<input type=radio id=friendly name=tone-option>
+						<label for=corporate><img src='http://image.flaticon.com/icons/svg/114/114329.svg' alt=Corporate/pro style='width: 20px'>Corporate/pro</label>
+						<input type=radio id=corporate name=tone-option>
+						<label for=media><img src='http://image.flaticon.com/icons/svg/149/149385.svg' alt=Media/Formal style='width: 20px'>Media/Formal</label>
+						<input type=radio id=media name=tone-option>
+					</fieldset>
 				</section>
-			</section>
-			<section>
+				<section class=urgency>
+					<h1 class=counter-header>Tell us how urgent this job is</h1>
+					<input type="range" min="-1" max="1" value="0" step="1" name="power" list="grad">
+					 <datalist id="grad">
+						 <option value="-1" label="I got time">
+						 <option value="0" label="Average">
+						 <option value="1" label="Yesterday">
+					 </datalist>
+					<section class=timeline-info>
+						<h1 class=uppercase><img src='http://image.flaticon.com/icons/svg/149/149150.svg' alt='timeline info' style='width: 20px'>Timeline info</h1>
+						<p>With an <span style='text-transform: uppercase; color:#f2cd85; font-weight: bolder;'>average</span> timeline set up our expert translator can take a reasonable amount of time perfecting your translation</p>
+					</section>
+				</section>
+			</div>
+			<section class=sign-up>
 				<h1 class=counter-header>Sign up and choose a payment method</h1>
-				<p>Already have an account whith us?<p>
-				<a href=/>Sign in</a>
+				<p>Already have an account whith us? <a href=/>Sign in</a><p>
 				<fieldset>
 					<label for=full-name>Full name</label>
 					<input type=text placeholder="Mathiew Mayer" id=full-name>
@@ -168,23 +174,24 @@
 		</form>
 	</main>
 	<footer>
-		<dl>
-			<dt>What we do
-			<dd>We provide a full range of language services includig content development, document, website and social media accounts translations
-			<dt>Our main office
-			<dd>
+		<ul>
+			<li>
+				<h1>What we do</h1>
+				<p>We provide a full range of language services includig content development, document, website and social media accounts translations</p>
+			<li>
+				<h1>Our main office</h1>
 				<address>
 					Duba, UAE <br>
 					P.O. Box: 502735 <br>
 					Phone: +971(0) 44278128
 				</address>
-			<dt>Connect with us
-			<dd>
+			<li>
+				<h1>Connect with us</h1>
 				<address>
 					<a href=/>Facebook</a>
 					<a href=/>Twitter</a>
 					<a href=/>Linkedin</a>	
 				</address>			
-		</dl>
+		</ul>
 	</footer>
 	</html>
