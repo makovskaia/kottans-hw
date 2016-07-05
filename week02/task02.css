@@ -320,9 +320,28 @@ input[type=range]::-moz-range-track {
 .sign-up{
 	height: 300px;
 	padding: 0 40px 0 40px;
-	display: block;
 }
 
+.sign-up input{
+	padding: 10px 15px 10px 15px;
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.payment-method{
+	width: 100%;
+	justify-content: space-around;
+}
+
+.payment-method input{
+	display: none;
+}
+/*
+.personal-info label{
+	display: inline-block;
+}
+*/
 .counter-header
 {
 	margin-top: 30px;
@@ -339,7 +358,7 @@ input[type=range]::-moz-range-track {
 }
 
 .small-after:after{
-	content:'  (Doc, Docx, Text, PDF, Markdown)';
+	content:'(Doc, Docx, Text, PDF, Markdown)';
 	font-size: 12px;
 	font-weight: lighter;
 	margin-left: 12px;

@@ -115,12 +115,10 @@
 				<section class=desired-tone>
 					<h1 class=counter-header>Select your desired tone</h1>
 					<fieldset class=what-to-translate>
-						<label for=friendly><img src='http://image.flaticon.com/icons/svg/149/149447.svg' alt=Friendly/casual style='width: 20px'>Friendly/casual</label>
-						<input type=radio id=friendly name=tone-option>
-						<label for=corporate><img src='http://image.flaticon.com/icons/svg/114/114329.svg' alt=Corporate/pro style='width: 20px'>Corporate/pro</label>
-						<input type=radio id=corporate name=tone-option>
-						<label for=media><img src='http://image.flaticon.com/icons/svg/149/149385.svg' alt=Media/Formal style='width: 20px'>Media/Formal</label>
-						<input type=radio id=media name=tone-option>
+						<label for=friendly><img src='http://image.flaticon.com/icons/svg/149/149447.svg' alt=Friendly/casual style='width: 20px'>Friendly/casual<input type=radio id=friendly name=tone-option></label>
+						
+						<label for=corporate><img src='http://image.flaticon.com/icons/svg/114/114329.svg' alt=Corporate/pro style='width: 20px'>Corporate/pro<input type=radio id=corporate name=tone-option></label>						
+						<label for=media><img src='http://image.flaticon.com/icons/svg/149/149385.svg' alt=Media/Formal style='width: 20px'>Media/Formal<input type=radio id=media name=tone-option></label>						
 					</fieldset>
 				</section>
 				<section class=urgency>
@@ -140,34 +138,24 @@
 			<section class=sign-up>
 				<h1 class=counter-header>Sign up and choose a payment method</h1>
 				<p>Already have an account whith us? <a href=/>Sign in</a><p>
-				<fieldset>
-					<label for=full-name>Full name</label>
-					<input type=text placeholder="Mathiew Mayer" id=full-name>
-					<label for=email-address>Email address</label>
-					<input type=email placeholder=mthiew.mm@me.com id=email-address>
-					<label for=choose-a-password>Choose a password</label>
-					<input type=password id=choose-a-password>
+				<fieldset class=personal-info>
+					<label for=full-name>Full name<input type=text placeholder="Mathiew Mayer" id=full-name></label>
+					<label for=email-address>Email address<input type=email placeholder=mthiew.mm@me.com id=email-address></label>
+					<label for=choose-a-password>Choose a password<input type=password id=choose-a-password></label>
 				</fieldset>
-				<fieldset>
-					<label for=visa><img src=# alt="visa or mastercard"></label>
-					<input type=radio name=payment-option id=visa>
-					<label for=paypal><img src=# alt=paypal></label>
-					<input type=radio name=payment-option id=paypal>
-					<label for=amazon><img src=# alt=amazon></label>
-					<input type=radio name=payment-option id=amazon>
+				<fieldset class=payment-method>
+					<label for=visa><img src=# alt="visa or mastercard"><input type=radio name=payment-option id=visa></label>
+					<label for=paypal><img src=# alt=paypal><input type=radio name=payment-option id=paypal></label>				
+					<label for=amazon><img src=# alt=amazon><input type=radio name=payment-option id=amazon></label>				
 				</fieldset>
-				<fieldset>
-					<label for=card-number>Card number</label>
-					<input type=number id=card-number>
-					<label for=expiry-date>Expiry date</label>
-					<input type=date id=expiry-date>
-					<label for=code>Code</label>
-					<input type=number id=code>
+				<fieldset class=credit-card-info>
+					<label for=card-number>Card number<input type=number id=card-number></label>					
+					<label for=expiry-date>Expiry date<input type=date id=expiry-date></label>
+					<label for=code>Code<input type=number id=code></label>					
 				</fieldset>
 			</section>
-			<section class=place-order>
-				<input type=checkbox id=terms-conditions>
-				<label for=terms-conditions><small>I agree to the <a href=#>Terms &amp; Conditions</a></small></label>
+			<section class=place-order>				
+				<label for=terms-conditions><input type=checkbox id=terms-conditions><small>I agree to the <a href=#>Terms &amp; Conditions</a></small></label>
 				<button type=submit>Place order</button>
 				<button>Print a quote</button>
 			</section>
