@@ -24,11 +24,9 @@ background: #ECEEF4;
 
 body
 {
-	max-width: 940px;
+/*
 	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	padding-right: 20px;*/
 	color: #939393;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
@@ -39,11 +37,18 @@ body
 	text-transform: uppercase;
 }
 
+header{
+	display: flex;
+	justify-content: space-around;
+}
+
 main
 {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 940px;
 	counter-reset: heading;
-/*	padding-bottom: 50px;
-	padding-top: 30px;*/
+	margin-bottom: 80px;
 }
 
 button{
@@ -54,6 +59,10 @@ button{
 
 img{
 	margin: 0 15px 0 15px;
+}
+
+a{
+	text-decoration: underline;
 }
 
 .nav-buttons
@@ -331,17 +340,19 @@ input[type=range]::-moz-range-track {
 
 .payment-method{
 	width: 100%;
-	justify-content: space-around;
+/*	display: flex;
+	flex-direction: row;
+	justify-content: space-around;*/
 }
+
+/*.payment-method label{
+	display: block;
+}*/
 
 .payment-method input{
 	display: none;
 }
-/*
-.personal-info label{
-	display: inline-block;
-}
-*/
+
 .counter-header
 {
 	margin-top: 30px;
@@ -369,10 +380,22 @@ input[type=range]::-moz-range-track {
 	justify-content: flex-end;
 	padding-left: 30px;
 	padding-right: 30px;
-
+	padding-bottom: 50px;
 }
 
-footer ul{
-	display: inline;
+.place-order button{
+	margin-left: 10px;
 }
+
+footer{
+	background: #838baf;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*footer *{
+	width: 50%;
+	text-align: center;
+}*/
 
