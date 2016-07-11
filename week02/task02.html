@@ -32,7 +32,7 @@
 						</table>
 					</div>
 					<fieldset class="order-buttons uppercase">
-						<button class=place-order-button>
+						<button class=place-order-button type=submit disabled>
 							Place order
 						</button>
 						<button class=print-a-quote-button>
@@ -52,13 +52,13 @@
 
 			<section class=translate-options>
 				<h1 class=uppercase>Select what you want to translate</h1>
-				<fieldset class=what-to-translate>
-					<label for=website><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=website style='width: 100px; margin: 7px 0 7px'>Website</label>
-					<input type=radio id=website name=translate-option>
-					<label for=documents><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=documents style='width: 100px; margin: 7px 0 7px'>Documents</label>
-					<input type=radio id=documents name=translate-option>
-					<label for=social-account><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=social-account style='width: 100px; margin: 7px 0 7px'>Social account</label>
-					<input type=radio id=social-account name=translate-option>
+				<fieldset class='what-to-translate radio-labels'>
+					<label for=website class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=website style='width: 100px; margin: 7px 0 7px'>Website<input type=radio id=website name=translate-option></label>
+					
+					<label for=documents class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=documents style='width: 100px; margin: 7px 0 7px'>Documents<input type=radio id=documents name=translate-option></label>
+					
+					<label for=social-account class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src='http://image.flaticon.com/icons/svg/85/85966.svg' alt=social-account style='width: 100px; margin: 7px 0 7px'>Social account<input type=radio id=social-account name=translate-option></label>
+					
 				</fieldset>
 			</section>
 
@@ -114,11 +114,11 @@
 			<div class=desired-tone-and-urgency-sections-wrapper>
 				<section class=desired-tone>
 					<h1 class=counter-header>Select your desired tone</h1>
-					<fieldset class=what-to-translate>
-						<label for=friendly><img src='http://image.flaticon.com/icons/svg/149/149447.svg' alt=Friendly/casual style='width: 20px'>Friendly/casual<input type=radio id=friendly name=tone-option></label>
+					<fieldset class='desired-tone-fieldset radio-labels'>
+						<label for=friendly class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src='http://image.flaticon.com/icons/svg/149/149447.svg' alt=Friendly/casual style='width: 20px'>Friendly/casual<input type=radio id=friendly name=tone-option></label>
 						
-						<label for=corporate><img src='http://image.flaticon.com/icons/svg/114/114329.svg' alt=Corporate/pro style='width: 20px'>Corporate/pro<input type=radio id=corporate name=tone-option></label>						
-						<label for=media><img src='http://image.flaticon.com/icons/svg/149/149385.svg' alt=Media/Formal style='width: 20px'>Media/Formal<input type=radio id=media name=tone-option></label>						
+						<label for=corporate class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src='http://image.flaticon.com/icons/svg/114/114329.svg' alt=Corporate/pro style='width: 20px'>Corporate/pro<input type=radio id=corporate name=tone-option></label>						
+						<label for=media class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src='http://image.flaticon.com/icons/svg/149/149385.svg' alt=Media/Formal style='width: 20px'>Media/Formal<input type=radio id=media name=tone-option></label>						
 					</fieldset>
 				</section>
 				<section class=urgency>
@@ -139,26 +139,26 @@
 				<h1 class=counter-header>Sign up and choose a payment method</h1>
 				<p>Already have an account whith us? <a href=/>Sign in</a></p>
 				<fieldset class=personal-info>
-					<label for=full-name>Full name<input type=text placeholder="Mathiew Mayer" id=full-name></label>
+					<label for=full-name>Full name<input type=text placeholder="Mathiew Mayer" id=full-name maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label>
 					<!-- <div> -->
-					<label for=email-address>Email address<input type=email placeholder=mthiew.mm@me.com id=email-address></label>
-					<label for=choose-a-password >Choose a password<input type=password id=choose-a-password></label>
+					<label for=email-address>Email address<input type=email placeholder=mthiew.mm@me.com id=email-address maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label>
+					<label for=choose-a-password >Choose a password<input type=password id=choose-a-password maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label>
 					<!-- </div> -->
 				</fieldset>
-				<fieldset class=payment-method>
-					<label for=visa><img src=https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg alt="visa or mastercard" style="height: 20px"><img src=https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg alt="visa or mastercard" style="height: 20px"><input type=radio name=payment-option id=visa></label>
-					<label for=paypal><img src=https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg alt=paypal style="height: 20px"><input type=radio name=payment-option id=paypal></label>				
-					<label for=amazon><img src=https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg alt=amazon style="height: 20px"><input type=radio name=payment-option id=amazon></label>				
+				<fieldset class='payment-method radio-labels'>
+					<label for=visa class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src=https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg alt="visa or mastercard" style="width: 40px"><img src=https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg alt="visa or mastercard" style="width: 40px"><input type=radio name=payment-option id=visa></label>
+					<label for=paypal class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src=https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg alt=paypal style="width: 100px"><input type=radio name=payment-option id=paypal></label>				
+					<label for=amazon class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src=https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg alt=amazon style="width: 100px"><input type=radio name=payment-option id=amazon></label>
 				</fieldset>
 				<fieldset class=credit-card-info>
-					<label for=card-number>Card number<input type=number id=card-number></label>					
-					<label for=expiry-date>Expiry date<input type=date id=expiry-date></label>
-					<label for=code>Code<input type=number id=code></label>					
+					<label for=card-number>Card number<input type=number id=card-number required></label>					
+					<label for=expiry-date>Expiry date<input type=date id=expiry-date required></label>
+					<label for=code>Code<input type=number id=code required></label>					
 				</fieldset>
 			</section>
 			<section class=place-order>				
 				<label for=terms-conditions><input type=checkbox id=terms-conditions><small>I agree to the <a href=#>Terms &amp; Conditions</a></small></label>
-				<button type=submit>Place order</button>
+				<button type=submit class=place-order-button disabled>Place order</button>
 				<button>Print a quote</button>
 			</section>
 		</form>
@@ -191,4 +191,6 @@
 			<img class=logo src='http://image.flaticon.com/icons/svg/126/126502.svg' style='width: 80px' alt=logo>
 		<!-- </ul> -->
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src='task02.js'></script>
 	</html>
