@@ -5,7 +5,7 @@ body, h1
 	margin: 0;
 }
 
-a, fieldset, button
+a, fieldset, button, label
 {
 	all:unset;
 }
@@ -71,6 +71,7 @@ a{
 	align-items: center;
 	justify-content: space-between;
 	height: 200px;
+	padding: 0 60px 0 60px;
 }
 
 .nav-buttons a
@@ -110,7 +111,6 @@ a{
 .order-details
 {
 	display: inline-table;
-/*	font-size: 14px;*/
 	text-align: left;
 }
 
@@ -123,23 +123,20 @@ a{
 	padding-top: 20px;
 }
 
-.order-buttons
+.order-buttons *
 {
-/*	display: flex;
-	align-content: space-between;*/
-	padding-top: 20px;
+	display: block;
+	margin-top: 20px;
+	width: 70%;
+	text-align: center;
 }
-
-.order-buttons button{
-
-}
-
 
 .order-and-help-center-wrapper
 {
 	display: flex;
 	height: 140px;
 }
+
 .help-center
 {
 	border-left:0.2px solid #939393;
@@ -239,17 +236,18 @@ a{
 
 .desired-tone{
 	height: 300px;
-	padding: 0 40px 0 40px;
+	padding-left: 40px;
+	width: 40%;
 }
 
 .desired-tone label{
 	border: 0.2px solid #939393;
 	border-radius: 5px;
-	display:block;
-	width: 200px;
-	height: 50px;
+	display: block;
+	padding: 13px 0;
 	margin: 20px;
-	/*padding: 10px 20px 10px 20px;*/
+	width: 70%;
+	text-align: center;
 }
 
 .desired-tone label:hover{
@@ -263,6 +261,9 @@ a{
 .urgency{
 	height: 300px;
 	padding: 0 40px 0 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 
@@ -270,9 +271,9 @@ a{
 
 
 input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
+  -webkit-appearance: none; 
+  width: 100%; 
+  background: transparent; 
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -280,14 +281,14 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  outline: none; 
 }
 
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
 
-  /* Hides the slider so custom styles can be added */
+  
   background: transparent; 
   border-color: transparent;
   color: transparent;
@@ -327,7 +328,7 @@ input[type=range]::-moz-range-track {
 }
 
 .sign-up{
-	height: 300px;
+	/*height: 400px;*/
 	padding: 0 40px 0 40px;
 }
 
@@ -339,18 +340,28 @@ input[type=range]::-moz-range-track {
 }
 
 .payment-method{
-	width: 100%;
-/*	display: flex;
-	flex-direction: row;
-	justify-content: space-around;*/
+	height: 100px;
+	text-align: center;
+	padding-top: 30px;
 }
 
-/*.payment-method label{
-	display: block;
-}*/
+.payment-method label{
+	border: 0.2px solid #939393;
+	border-radius: 5px;
+	display:inline-flex;
+	width: 150px;
+	height: 50px;
+	margin: 0 20px 0 20px;
+	align-items: center;
+	justify-content: space-around;
+}
 
 .payment-method input{
 	display: none;
+}
+
+.personal-info input, .credit-card-info input{
+	display: block;
 }
 
 .counter-header
@@ -378,13 +389,15 @@ input[type=range]::-moz-range-track {
 .place-order{
 	display: flex;
 	justify-content: flex-end;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 50px;
+	padding: 40px;
 }
 
-.place-order button{
-	margin-left: 10px;
+.place-order *{
+	margin: 0 15px 0 15px;
+}
+
+.place-order label{
+	margin-top: 10px;
 }
 
 footer{
@@ -392,10 +405,7 @@ footer{
 	color: #ffffff;
 	display: flex;
 	justify-content: space-around;
+	padding-top: 50px;
 }
 
-/*footer *{
-	width: 50%;
-	text-align: center;
-}*/
 
