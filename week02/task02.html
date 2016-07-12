@@ -139,11 +139,9 @@
 				<h1 class=counter-header>Sign up and choose a payment method</h1>
 				<p>Already have an account whith us? <a href=/>Sign in</a></p>
 				<fieldset class=personal-info>
-					<label for=full-name>Full name<input type=text placeholder="Mathiew Mayer" id=full-name maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label>
-					<!-- <div> -->
+					<label for=full-name>Full name<input type=text placeholder="Mathiew Mayer" id=full-name maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label><br>
 					<label for=email-address>Email address<input type=email placeholder=mthiew.mm@me.com id=email-address maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label>
 					<label for=choose-a-password >Choose a password<input type=password id=choose-a-password maxlength="20" required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px'></label>
-					<!-- </div> -->
 				</fieldset>
 				<fieldset class='payment-method radio-labels'>
 					<label for=visa class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src=https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg alt="visa or mastercard" style="width: 40px"><img src=https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg alt="visa or mastercard" style="width: 40px"><input type=radio name=payment-option id=visa></label>
@@ -151,9 +149,9 @@
 					<label for=amazon class=radio-label><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=check-img alt='' style='width: 30px'><img src=https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg alt=amazon style="width: 100px"><input type=radio name=payment-option id=amazon></label>
 				</fieldset>
 				<fieldset class=credit-card-info>
-					<label for=card-number>Card number<input type=number id=card-number required></label>					
+					<label for=card-number>Card number<input type=number id=card-number required><img src='http://image.flaticon.com/icons/svg/148/148767.svg' class=correct-img alt='' style='width: 20px; margin-left: 250px'></label>				
 					<label for=expiry-date>Expiry date<input type=date id=expiry-date required></label>
-					<label for=code>Code<input type=number id=code required></label>					
+					<label for=code>Code<input type=number id=code required maxlength='4'></label>					
 				</fieldset>
 			</section>
 			<section class=place-order>				

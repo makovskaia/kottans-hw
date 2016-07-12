@@ -366,8 +366,16 @@ input[type=range]::-moz-range-track {
 	display: none;
 }
 
+.personal-info label, .credit-card-info label{
+	display: inline-block; 
+	margin: 10px 10px 10px;	
+	width: 200px;
+}
+
 .personal-info input, .credit-card-info input{
 	display: block;
+	margin-left: -0.1em;
+	width: 160px;
 }
 
 .counter-header
@@ -406,6 +414,9 @@ input[type=range]::-moz-range-track {
 	margin-top: 10px;
 }
 
+
+
+
 footer{
 	background: #838baf;
 	color: #ffffff;
@@ -429,13 +440,25 @@ footer{
 	margin-top: -25px;
 	margin-left: 140px;
 }
-
 .check-img{
 	display: none;
 }
+
 .correct-img{
 	position: absolute;
 	margin-top: -38px;
 	margin-left: 165px;
 	display: none;
+}
+
+#card-number{
+	width: 250px;
+}
+
+.credit-card-info label:nth-child(1){
+	width: 290px;
+}
+
+input::-webkit-inner-spin-button{
+	display: none !important;
 }
